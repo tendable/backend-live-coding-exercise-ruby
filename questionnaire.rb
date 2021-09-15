@@ -16,11 +16,7 @@ def do_prompt
   @questions.each_key do |key|
     print @questions[key]
     ans = gets.chomp
-
-    # TODO: COMPLETE
   end
-
-  # TODO: COMPLETE
 end
 
 def do_report
