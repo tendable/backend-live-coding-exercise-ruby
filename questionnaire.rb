@@ -14,12 +14,10 @@ require "pstore"
 def do_prompt
   # Ask each question and get an answer from the user's input.
   @questions.each_key do |key|
-    loop do
-      print @questions[key]
-      ans = gets.chomp
+    print @questions[key]
+    ans = gets.chomp
 
-      # TODO: COMPLETE
-    end
+    # TODO: COMPLETE
   end
 
   # TODO: COMPLETE
