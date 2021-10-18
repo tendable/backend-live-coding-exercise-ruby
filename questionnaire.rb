@@ -1,20 +1,21 @@
-require "pstore"
+require "pstore" # https://github.com/ruby/pstore
 
-@store = PStore.new("pward.pstore")
+STORE_NAME = "pward.pstore"
+store = PStore.new(STORE_NAME)
 
-@questions = {
+QUESTIONS = {
   "q1" => "Can you code in Ruby?",
   "q2" => "Can you code in JavaScript?",
   "q3" => "Can you code in Swift?",
   "q4" => "Can you code in Java?",
   "q5" => "Can you code in C#?"
-}
+}.freeze
 
 # TODO: FULLY IMPLEMENT
 def do_prompt
   # Ask each question and get an answer from the user's input.
-  @questions.each_key do |key|
-    print @questions[key]
+  QUESTIONS.each_key do |question_key|
+    print QUESTIONS[question_key]
     ans = gets.chomp
   end
 end
