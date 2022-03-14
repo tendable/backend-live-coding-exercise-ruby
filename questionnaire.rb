@@ -1,6 +1,6 @@
 require "pstore" # https://github.com/ruby/pstore
 
-STORE_NAME = "pward.pstore"
+STORE_NAME = "tendable.pstore"
 store = PStore.new(STORE_NAME)
 
 QUESTIONS = {
